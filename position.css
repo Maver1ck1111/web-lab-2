@@ -1,0 +1,106 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+.text{
+    overflow-y: auto;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+.up, .down{
+    position: relative;
+    width: 100vw;
+    height: 20vh;
+    background-color: lightblue;
+}
+
+.main{
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+}
+
+.left{
+    position: absolute;
+    width: 20vw;
+    height: 60vh;
+    background-color: lightsalmon;
+}
+
+.center{
+    position: absolute;
+    width: 60vw;
+    height: 50vh;
+    top: 10vh;
+    left: 20vw;
+    text-align: center;
+}
+
+img{
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center-up{
+    position: absolute;
+    left: 20vw;
+    width: 80vw;
+    height: 10vh;
+    background-color: lightgreen;
+}
+
+.right{
+    position: absolute;
+    width: 20vw;
+    height: 50vh;
+    top: 10vh;
+    left: 80vw;
+    background-color: lightsalmon;
+}
+
+.insert{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    height: 20px;
+    width: 50px;
+    margin: 0 20px;
+    align-self: center;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.up-block{
+    position: absolute;
+    height: 20vh;
+    width: 10vw;
+}
+
+.up-value{
+    position: absolute;
+    left: 100px;
+}
+
+.down-block{
+    position: absolute;
+    height: 20vh;
+    width: 10vw;
+    left: 90vw;
+}
+
+.down-value{
+    width: 90vw;
+    position: absolute;
+}

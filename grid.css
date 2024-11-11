@@ -1,0 +1,72 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+.text{
+    overflow-y: auto;
+}
+
+ul{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+li{
+    list-style: none;
+}
+
+.up, .down{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 20vh;
+    height: 20vh;
+    background-color: lightblue;
+}
+
+.insert{
+    height: 20px;
+    width: 50px;
+    margin: 0 20px;
+    align-self: center;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.main{
+    height: 60vh;
+    width: 100vw;
+}
+
+.center{
+    display: grid;
+    grid-template-columns: repeat(10, 10vw);
+    grid-template-rows: 10vh 50vh;
+}
+
+.left{
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: lightsalmon;
+}
+
+.center-up{
+    grid-column: 3 /-1;
+    background-color: lightgreen;
+}
+
+.center-center{
+    grid-column: 3 / 9;
+    display: grid;
+    place-content: center;
+}
+
+.right{
+    grid-column: 9 / -1;
+    background-color: lightsalmon;
+}
