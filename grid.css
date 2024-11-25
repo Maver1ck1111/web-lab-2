@@ -3,22 +3,18 @@ body{
     margin: 0;
 }
 
-p{
-    margin: 0;
-}
 
 .text{
     overflow-y: auto;
+    display: grid;
+    place-items: center;
+    height: 100%;
 }
 
-ul{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 50px;
-}
 
 li{
     list-style: none;
+    margin-bottom: 50px;
 }
 
 .up, .down{
@@ -41,9 +37,6 @@ li{
 .main{
     height: 60vh;
     width: 100vw;
-}
-
-.center{
     display: grid;
     grid-template-columns: repeat(10, 10vw);
     grid-template-rows: 10vh 50vh;
@@ -58,6 +51,7 @@ li{
 .center-up{
     grid-column: 3 /-1;
     background-color: lightgreen;
+
 }
 
 .center-center{
