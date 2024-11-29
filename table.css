@@ -1,16 +1,6 @@
-body{
+body, tr, td{
     padding: 0;
     margin: 0;
-}
-
-tr{
-    margin: 0;
-    padding: 0;
-}
-
-td{
-    margin: 0;
-    padding: 0;
 }
 
 li{
@@ -23,10 +13,17 @@ table {
 }
 
 .up, .down{
-    table-layout: fixed;
+    display: block;
     height: 20vh;
     width: 100vw;
     background-color: lightblue;
+    overflow-y: auto;
+}
+
+.cell-text{
+    display: table-cell;
+    height: 20vh;
+    vertical-align: middle;
 }
 
 .insert{
@@ -41,57 +38,54 @@ table {
     border: 1px solid black;
 }
 
-main{
+.main {
+    display: block;
     table-layout: fixed;
-    height: 60vh;
     width: 100vw;
+    max-height: 60vh;
+    overflow-y: auto; 
+}
+
+.data{
+    display: inline-block;
+    position: relative;
+    top: 50%; 
+    transform: translateY(-50%);
 }
 
 .left{
-    min-width: 20vw;
+    display: inline-block;
+    width: 20vw;
     height: 60vh;
     background-color: lightsalmon;
 }
 
-.center{
+.right{
     width: 80vw;
-    max-height: 60vh;
-    overflow-y: auto;
+    height: 60vh;
 }
 
 .center-up{
+    display: inline-block;
     width: 80vw;
     height: 10vh;
     background-color: lightgreen;
-    overflow-y: auto;
 }
 
 .corner-left{
+    display: inline-block;
     width: 60vw;
     height: 50vh;
-    position: relative;
-}
-
-img{
-    position: absolute;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%); 
+    text-align: center;
 }
 
 .corner-right{
+    display: inline-block;
     width: 20vw;
     height: 50vh;
     background-color: lightsalmon;
-    overflow-y: auto;
 }
 
-.text, .up-down-text{
-    overflow-y: auto;
-}
-
-.up-down-text{
-    overflow-x: hidden;
-    max-height: 20vh;
-    max-width: 100vw;
+.text{
+    overflow-x: auto;
 }
